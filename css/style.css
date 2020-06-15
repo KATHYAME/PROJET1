@@ -1,0 +1,285 @@
+/**GENERAL **/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-family: cambria;
+}
+
+ul{
+	list-style: none;
+}
+
+/** header **/
+#banner{
+	background-image: url(../img/bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 10%;
+
+}
+#banner nav {
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+	
+}
+
+#banner nav ul {
+	text-align: center;
+}
+
+#banner nav ul li{
+	display: inline-block;
+	padding-left: 25px;
+}
+
+#banner nav ul li a{
+	color: white;
+
+}
+
+#banner nav ul li a:hover{
+	color: red;
+	transition: 2s;
+}
+
+#hb{
+	text-align: center;
+	background-color: rgba(255,255,255,0.3);
+	margin-top: 10%;
+	height: 100%;
+	padding: 2%;
+	color: #0;
+	font-family: rockwell;
+
+}
+
+#hb p{
+	font-weight: bold;
+}
+#hb a{
+	color: red;
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid red;
+	border-radius: 15px;
+	margin-bottom: 1%;
+	margin-top: 5px;
+	transition: ease-in 1s;
+}
+
+#hb a:hover{
+	color: white;
+	background-color: rgba(178,32,19,08);
+}
+#s1{
+	display: flex;
+	width: 100%;
+
+}
+
+#pic{
+	flex: 1;
+	padding: 20px 20px 20px 10px;
+}
+#pic img{
+	flex: 1;
+    max-width: 100%;
+}
+
+#s1 p{
+	flex: 2;
+	text-align: justify;
+	font-family: cambria;
+	
+	line-height: 16px;
+	padding: 20px 10px 20px 20px;
+}
+#s2{
+	display: flex;
+	background-color: lightgrey;
+	font-family: cambria;
+
+}
+.art{
+	flex: 1;
+	text-align: center;
+}
+.art p{
+	text-align: justify;
+	padding: 15px;
+
+}
+.art img{
+	padding-top: 10px;
+}
+#form form{
+	margin: 0px 25% auto 25%;
+	background-color: gainsboro;
+	padding-bottom: 20px;
+}
+.prl{
+	padding: 0 20px 0 20px;
+}
+input[type=text], input[type=email], select, textarea{
+	width: 100%;
+}
+
+
+input[type=text], input[type=email], select{
+	padding: 12px;	
+	border: none;
+	border-bottom: 1px solid grey;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+textarea{
+	padding: 12px;
+	border: none;
+	max-height: 200px;
+	resize: vertical;
+
+}
+
+input[type=text]:focus, input[type=email]:hover, select:hover, textarea:focus{
+	border: 2px solid green;
+}
+
+#form form{
+	padding-top: 10px;
+}
+
+#nom:focus{
+	border: 2px solid green;
+}
+
+.prl2{
+	padding-left: 20px;
+}
+
+.champ{
+}
+
+/*.m.prl2 label {
+	margin-right: 25px;
+}*/
+.m.prl2{
+	margin-bottom: 20px;
+}
+
+
+#form form :nth-child(5) label{
+	margin-right: 25px;
+}
+
+
+#form form :nth-last-child(3){
+	margin-bottom: 20px;
+}
+.bt{
+	padding: 13px 25px;
+	border-radius: 4px;
+	color: white;
+	text-transform: uppercase;
+	transition: ease-in 1s;
+	cursor: pointer;
+
+}
+input[type=submit]{
+	background-color: rgba(0,128,0,0.5);
+	border: 1px solid rgba(0,128,0,0.5);
+}
+
+input[type=submit]:hover{
+	background-color: green;
+	border: 1px solid green;
+}
+
+input[type=reset]{
+	background-color: rgba(255,0,0,0.5);
+	border: 1px solid rgba(255,0,0,0.5);
+}
+
+input[type=reset]:hover{
+	background-color: red;
+	border: 1px solid red;
+
+}
+#form form div:last-child{
+	text-align: center;
+}
+
+/*#form form :nth-child(8){
+	text-align: center;
+}*/
+#bf1{
+	background-color: #e74c3c;
+}
+
+#news{
+	margin: 0px 25% 0px 25%;
+	padding-bottom: 15px;
+
+}
+
+#news h2{
+	padding-top: 15px;
+}
+
+#ff button{
+	cursor: pointer;
+	color: white;
+	background-color: #808080;
+	padding: 5px 15px;
+	border-radius: 2px;
+	border: none;
+
+}
+
+#mail{
+	padding: 5px;
+	margin-bottom: 5px;
+}
+#bf2{
+	display: flex;
+	justify-content: center;
+}
+.rs{
+	padding: 20px;
+}
+.rs a img{
+	width: 2em;
+
+}
+
+/** media queries **/
+
+@media  screen and (max-width: 480px) {
+	#banner nav ul li{
+		display: block;
+		padding: 10px;
+	}
+#hb{
+	padding-bottom: 6%;
+}
+	#hb a{
+	color: red;
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid red;
+	border-radius: 15px;
+	margin-bottom: 1%;
+
+}
+
+	#s1, #s2{
+		flex-direction: column;
+	}
+}
